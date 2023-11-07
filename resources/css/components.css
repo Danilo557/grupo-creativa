@@ -1,0 +1,75 @@
+.content {
+    @apply container mx-auto px-4;
+}
+
+.alert-load-image {
+    @apply mb-4 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+@font-face {
+    font-family: "megante";
+    src: url("../../public/assets/font/Meganté.ttf");
+}
+
+.megante {
+    font-family: "megante";
+}
+
+
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.boton-add {
+    box-shadow: inset 0px 0px 0px 0px black;
+    background: linear-gradient(to bottom, #d6d6d6 5%, #e3e3e3 100%);
+    background-color: #d6d6d6;
+    border-radius: 6px;
+    border: 1px solid #e3e3e3;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+.caracteristica {
+    height: auto;
+
+}
+
+.caracteristica li {
+
+    list-style: none;
+    margin-bottom: 20px;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.caracteristica li i {
+    margin-right: 20px;
+}
+
+
+.sizes i {
+    margin: 0px 10px;
+    font-size: 8px;
+}
+
+.linea-articulo {
+    border-top: 4px dotted silver;
+    margin: 0% 20px;
+    padding: 20px 0;
+
+}

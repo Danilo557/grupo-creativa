@@ -1,0 +1,1 @@
+<x-wire.button primary icon="pencil" href="{{route('admin.colors.edit',$id)}}"  />

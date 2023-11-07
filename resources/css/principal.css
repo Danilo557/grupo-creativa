@@ -1,0 +1,17 @@
+.img-activate{
+    @apply hover:translate-y-0 hover:duration-200 hover:grayscale translate-y-5 cursor-pointer;
+   
+ }
+ 
+
+.vl {
+    background: #901438;
+    width: 6px;
+    border-radius: 25px;
+    height: 100%;
+}
+
+.clients i{
+    color: #8e1c3b;
+    margin: 20px;
+}

@@ -1,0 +1,1 @@
+<x-wire.button href="{{route('admin.ideals.edit',$ideal)}}" primary icon="pencil" />
