@@ -43,13 +43,14 @@ class DatabaseSeeder extends Seeder
         
 
         Material::factory(8)->create();
+        $this->call(RoleSeeder::class);
         $this->call(UnitSeeder::class);
         $this->call(IdealSeeder::class);
         $this->call(BrandSeeder::class);
         $this->call(StoreSeeder::class);
         $this->call(ProductSeeder::class);
         $this->call(ProductStoreSeeder::class);
-        $this->call(RoleSeeder::class);
+        
         $this->call(UserSeeder::class);
     }
 }

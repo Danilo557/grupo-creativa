@@ -6,6 +6,7 @@ use App\Models\Brand;
 use App\Models\Category;
 use App\Models\Color;
 use App\Models\Ideal;
+use App\Models\Message;
 use App\Models\Product;
 use App\Models\Store;
 use App\Models\Unit;
@@ -14,6 +15,7 @@ use App\Observers\BrandObserver;
 use App\Observers\CategoryObserver;
 use App\Observers\ColorObserver;
 use App\Observers\IdealObserver;
+use App\Observers\MessageObserver;
 use App\Observers\ProductObserver;
 use App\Observers\StoreObserver;
 use App\Observers\UnitObserver;
@@ -49,6 +51,7 @@ class AppServiceProvider extends ServiceProvider
         Color::observe(ColorObserver::class);
         Ideal::observe(IdealObserver::class);
         User::observe(UserObserver::class);
+        Message::observe(MessageObserver::class);
 
         Validator::extend('valid_color', function ($attribute, $value, $parameters, $validator) {
             $inputs = $validator->getData();

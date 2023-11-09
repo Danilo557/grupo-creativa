@@ -25,8 +25,6 @@ class RoleSeeder extends Seeder
         *P/E: en el archivo  Route::resource('user',UserController::class)->names('admin.user'); 
         Asignacion de permiso al rol con el metodo syncRoles
         */
-        Permission::create(['name' => 'dashboard'])->syncRoles([$admin, $customer]);
-        Permission::create(['name' => 'admin.brands.index'])->syncRoles([$admin]);
-        Permission::create(['name' => 'admin.units.index'])->syncRoles([$admin]);
+         
     }
 }

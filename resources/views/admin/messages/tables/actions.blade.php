@@ -1,0 +1,1 @@
+<x-wire.button primary icon="eye" href="{{route('admin.messages.show',$message)}}" />

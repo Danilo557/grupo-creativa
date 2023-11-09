@@ -1,0 +1,4 @@
+.contact{
+     @apply rounded-lg bg-[#f9f9f9] p-10 lg:w-4/5 w-full shadow-lg;
+
+}

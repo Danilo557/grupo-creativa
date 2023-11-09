@@ -67,6 +67,8 @@ Route::group(['middleware' => [\Spatie\Permission\Middleware\RoleMiddleware::usi
     Route::get('/orders', [OrderController::class, "index"])->name('admin.orders.index');
     Route::get('/orders/{order}/show/', [OrderController::class, "show"])->name('admin.orders.show');
 
+    Route::get('/messages', [AdminController::class, "messages"])->name('admin.messages.index');
+    Route::get('/messages/{message}/show', [AdminController::class, "messages_show"])->name('admin.messages.show');
     
 });
 

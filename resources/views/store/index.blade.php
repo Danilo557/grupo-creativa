@@ -10,8 +10,8 @@
                 <!-- Item 1 -->
                 <div class="hidden duration-700 ease-in-out bg-white" data-carousel-item>
                     <span
-                        class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First
-                        Slide</span>
+                        class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">
+                        </span>
                     <img class="lazy" data-src="{{ asset('assets/img/carousel/creativa_banner_inicio_A.webp') }}"
                         class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
                 </div>

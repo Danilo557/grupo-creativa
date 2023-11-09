@@ -1,5 +1,7 @@
 @import 'components.css';
 @import 'principal.css';
+@import 'we.css';
+@import 'distributor.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

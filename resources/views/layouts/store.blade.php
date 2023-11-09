@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+     <!-- Favicons -->
+     <link href="{{asset('assets/img/logo.webp')}}" rel="icon">
+     <link href="img/landing/general/apple-touch-icon.webp" rel="apple-touch-icon">
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Fonts -->
@@ -42,8 +44,8 @@
                 ],
                 [
                     'title' => 'Nosotros',
-                    'url' => route('store.index'),
-                    'active' => request()->routeIs('store.index'),
+                    'url' => route('store.we'),
+                    'active' => request()->routeIs('store.we'),
                     'sub' => null,
                 ],
                 [
@@ -55,15 +57,15 @@
 
                 [
                     'title' => 'Distribuidor',
-                    'url' => route('store.index'),
-                    'active' => request()->routeIs('store.index'),
+                    'url' => route('store.distributor'),
+                    'active' => request()->routeIs('store.distributor'),
                     'sub' => null,
                 ],
 
                 [
                     'title' => 'Creativa tips',
-                    'url' => route('store.index'),
-                    'active' => request()->routeIs('store.index'),
+                    'url' => route('store.tips'),
+                    'active' => request()->routeIs('store.tips'),
                     'sub' => null,
                 ],
             ];

@@ -101,6 +101,13 @@
                     'icon' => 'fa-solid fa-layer-group',
                     'role'=>auth()->user()->hasRole('Admin|Customer'),
                 ],
+                [
+                    'title' => 'Messages',
+                    'url' => route('admin.messages.index'),
+                    'active' => request()->routeIs('admin.messages.*'),
+                    'icon' => 'fa-solid fa-envelope',
+                    'role'=>auth()->user()->hasRole('Admin|Customer'),
+                ],
 
                 [
                     'title' => 'Users',

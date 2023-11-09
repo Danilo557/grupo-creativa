@@ -1,0 +1,25 @@
+.banner{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.mision{
+    @apply rounded-lg bg-[#f8f3f5] px-20 py-12;
+}
+
+.trayectoria{
+    @apply rounded-xl bg-white/75 px-20 py-12;
+}
+
+.bg-trayectoria{
+    @apply rounded-xl bg-white/30 p-3;
+}
+
+
+@media(max-width:992px){
+    .banner{
+        height: 350px;
+    }
+}

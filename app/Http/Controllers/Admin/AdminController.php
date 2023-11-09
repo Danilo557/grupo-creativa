@@ -9,6 +9,7 @@ use App\Models\Color;
 use App\Models\Feature;
 use App\Models\Ideal;
 use App\Models\Material;
+use App\Models\Message;
 use App\Models\Product;
 use App\Models\Size;
 use App\Models\Store;
@@ -51,6 +52,17 @@ class AdminController extends Controller
     public function ideals()
     {
         return view('admin.ideals.index');
+    }
+
+    public function messages()
+    {
+        return view('admin.messages.index');
+    }
+
+    public function messages_show(Message $message)
+    {
+        
+        return view('admin.messages.show',compact('message'));
     }
 
     public function brandselect(Request $request)
